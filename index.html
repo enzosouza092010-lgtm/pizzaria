@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pizzaria Lunamar em Caraguatatuba. Conheça nossos sabores e solicite sua reserva para o rodízio.">
+  <meta name="theme-color" content="#06182f">
+  <title>Pizzaria Lunamar — Cardápio e Reservas</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="page-noise" aria-hidden="true"></div>
+
+  <header class="site-header" id="inicio">
+    <div class="nav-shell">
+      <a class="brand" href="#inicio" aria-label="Pizzaria Lunamar, início">
+        <span class="brand-mark" aria-hidden="true">
+          <span class="moon"></span>
+          <span class="wave"></span>
+        </span>
+        <span class="brand-copy">
+          <strong>Lunamar</strong>
+          <small>Pizzaria desde 1999</small>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Navegação principal">
+        <a href="#cardapio">Cardápio</a>
+        <a href="#rodizio">Rodízio</a>
+        <a href="#historia">A Lunamar</a>
+        <a href="#localizacao">Localização</a>
+      </nav>
+
+      <a class="header-cta" href="#reserva">Reservar mesa</a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Menu móvel">
+      <a href="#cardapio">Cardápio</a>
+      <a href="#rodizio">Rodízio</a>
+      <a href="#historia">A Lunamar</a>
+      <a href="#localizacao">Localização</a>
+      <a class="mobile-reserve" href="#reserva">Reservar mesa</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-dark">
+      <div class="hero-image" aria-hidden="true">
+        <img src="./assets/lunamar-hero.webp" alt="" fetchpriority="high">
+      </div>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-orbit hero-orbit-one" aria-hidden="true"></div>
+      <div class="hero-orbit hero-orbit-two" aria-hidden="true"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow hero-eyebrow"><span></span> Na orla de Caraguatatuba desde 1999</p>
+          <h1>Noite de pizza.<br><em>Clima de mar.</em></h1>
+          <p class="hero-lead">Sabores autorais, rodízio e música ao vivo em um lugar feito para reunir todo mundo.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#cardapio">Explorar cardápio <span aria-hidden="true">↗</span></a>
+            <a class="button button-ghost" href="#reserva">Reservar rodízio</a>
+          </div>
+          <div class="hero-meta" aria-label="Informações de funcionamento">
+            <div>
+              <span class="meta-icon" aria-hidden="true">◷</span>
+              <p><strong>Terça a domingo</strong><small>das 18h à 00h</small></p>
+            </div>
+            <span class="meta-line"></span>
+            <div>
+              <span class="meta-icon" aria-hidden="true">⌖</span>
+              <p><strong>Em frente ao mar</strong><small>Porto Novo, Caraguatatuba</small></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="quality-card floating-card">
+            <span class="quality-seal">L</span>
+            <p><small>Tradição local</small><strong>27 anos de história</strong></p>
+          </div>
+          <div class="scroll-note"><span></span> role para descobrir</div>
+        </div>
+      </div>
+
+      <div class="hero-wave" aria-hidden="true">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+          <path d="M0,74 C280,124 510,12 790,62 C1040,108 1210,112 1440,48 L1440,120 L0,120 Z"></path>
+        </svg>
+      </div>
+    </section>
+
+    <section class="intro-band" aria-label="Diferenciais">
+      <div class="container intro-band-grid">
+        <p><span>01</span> Massa aberta todos os dias</p>
+        <p><span>02</span> Sabores autorais</p>
+        <p><span>03</span> Ambiente climatizado</p>
+        <p><span>04</span> Música ao vivo</p>
+      </div>
+    </section>
+
+    <section class="menu-section" id="cardapio">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow"><span></span> Escolha o seu sabor</p>
+            <h2>Do forno para a mesa.</h2>
+          </div>
+          <p>Dos clássicos que todo mundo ama às combinações especiais da casa. Encontre a pizza da sua noite.</p>
+        </div>
+
+        <div class="menu-toolbar reveal">
+          <div class="filter-tabs" role="tablist" aria-label="Categorias do cardápio">
+            <button class="filter-tab active" type="button" role="tab" aria-selected="true" data-filter="all">Destaques</button>
+            <button class="filter-tab" type="button" role="tab" aria-selected="false" data-filter="classicas">Clássicas</button>
+            <button class="filter-tab" type="button" role="tab" aria-selected="false" data-filter="especiais">Especiais</button>
+            <button class="filter-tab" type="button" role="tab" aria-selected="false" data-filter="doces">Doces</button>
+          </div>
+          <a class="text-link" href="https://www.pizzarialunamar.com.br/" target="_blank" rel="noopener">Ver cardápio oficial <span>↗</span></a>
+        </div>
+
+        <div class="pizza-grid" aria-live="polite">
+          <article class="pizza-card reveal" data-category="classicas">
+            <div class="pizza-number">01</div>
+            <div class="pizza-topline"><span>Clássica</span><span class="popular-tag">mais pedida</span></div>
+            <h3>Calabresa</h3>
+            <p>Molho de tomate, muçarela, calabresa fatiada, cebola e orégano.</p>
+            <button class="pizza-order" type="button" data-pizza="Calabresa">Quero essa <span>→</span></button>
+          </article>
+
+          <article class="pizza-card reveal" data-category="classicas">
+            <div class="pizza-number">02</div>
+            <div class="pizza-topline"><span>Clássica</span></div>
+            <h3>Portuguesa</h3>
+            <p>Molho de tomate, muçarela, presunto, ovos, cebola, ervilha e azeitonas.</p>
+            <button class="pizza-order" type="button" data-pizza="Portuguesa">Quero essa <span>→</span></button>
+          </article>
+
+          <article class="pizza-card featured reveal" data-category="especiais">
+            <div class="card-glow" aria-hidden="true"></div>
+            <div class="pizza-number">03</div>
+            <div class="pizza-topline"><span>Especial</span><span class="chef-tag">seleção da casa</span></div>
+            <h3>Margherita</h3>
+            <p>Molho de tomate, muçarela, tomates assados, manjericão e um toque de azeite.</p>
+            <button class="pizza-order" type="button" data-pizza="Margherita">Quero essa <span>→</span></button>
+          </article>
+
+          <article class="pizza-card reveal" data-category="especiais">
+            <div class="pizza-number">04</div>
+            <div class="pizza-topline"><span>Especial</span></div>
+            <h3>Quatro Queijos</h3>
+            <p>Muçarela, provolone, parmesão e catupiry em uma combinação cremosa.</p>
+            <button class="pizza-order" type="button" data-pizza="Quatro Queijos">Quero essa <span>→</span></button>
+          </article>
+
+          <article class="pizza-card reveal" data-category="especiais">
+            <div class="pizza-number">05</div>
+            <div class="pizza-topline"><span>Especial</span></div>
+            <h3>Frango com Catupiry</h3>
+            <p>Molho de tomate, muçarela, frango temperado, catupiry e orégano.</p>
+            <button class="pizza-order" type="button" data-pizza="Frango com Catupiry">Quero essa <span>→</span></button>
+          </article>
+
+          <article class="pizza-card reveal" data-category="doces">
+            <div class="pizza-number">06</div>
+            <div class="pizza-topline"><span>Doce</span></div>
+            <h3>Chocolate com Morango</h3>
+            <p>Chocolate cremoso, morangos frescos e finalização delicada da casa.</p>
+            <button class="pizza-order" type="button" data-pizza="Chocolate com Morango">Quero essa <span>→</span></button>
+          </article>
+        </div>
+
+        <p class="menu-note">Consulte tamanhos, valores, sabores disponíveis e possíveis adicionais pelo cardápio oficial.</p>
+      </div>
+    </section>
+
+    <section class="rodizio-section section-dark" id="rodizio">
+      <div class="rodizio-lines" aria-hidden="true"></div>
+      <div class="container rodizio-grid">
+        <div class="rodizio-copy reveal">
+          <p class="eyebrow eyebrow-light"><span></span> A noite inteira tem outro sabor</p>
+          <h2>Rodízio para<br><em>viver sem pressa.</em></h2>
+          <p>Sabores salgados e doces circulando pela mesa, ambiente climatizado e a energia que já faz parte das noites de Caraguá.</p>
+          <div class="rodizio-highlights">
+            <div><strong>∞</strong><span>Variedade de sabores</span></div>
+            <div><strong>♫</strong><span>Noites com música ao vivo</span></div>
+            <div><strong>✦</strong><span>Momentos para compartilhar</span></div>
+          </div>
+          <p class="availability"><span></span> Datas e disponibilidade confirmadas pela equipe</p>
+        </div>
+
+        <form class="reservation-card reveal" id="reserva" novalidate>
+          <div class="reservation-heading">
+            <span class="reservation-step">RESERVA</span>
+            <h3>Sua mesa está quase pronta.</h3>
+            <p>Preencha os dados e confirme o pedido diretamente no WhatsApp.</p>
+          </div>
+
+          <div class="form-grid">
+            <label class="field field-full">
+              <span>Nome</span>
+              <input type="text" name="name" autocomplete="name" placeholder="Como podemos chamar você?" required>
+            </label>
+            <label class="field">
+              <span>Data</span>
+              <input type="date" name="date" required>
+            </label>
+            <label class="field">
+              <span>Horário</span>
+              <select name="time" required>
+                <option value="">Selecione</option>
+                <option>18:30</option><option>19:00</option><option>19:30</option>
+                <option>20:00</option><option>20:30</option><option>21:00</option>
+                <option>21:30</option><option>22:00</option>
+              </select>
+            </label>
+            <label class="field field-full">
+              <span>Quantidade de pessoas</span>
+              <div class="guest-control">
+                <button type="button" class="guest-minus" aria-label="Diminuir quantidade">−</button>
+                <output id="guest-count" aria-live="polite">2 pessoas</output>
+                <button type="button" class="guest-plus" aria-label="Aumentar quantidade">+</button>
+              </div>
+              <input type="hidden" name="guests" value="2">
+            </label>
+          </div>
+          <button class="button button-reserve" type="submit">Solicitar reserva <span>→</span></button>
+          <p class="form-footnote"><span aria-hidden="true">✓</span> A reserva só é confirmada após o retorno da equipe.</p>
+          <p class="form-error" role="alert"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="story-section" id="historia">
+      <div class="container story-grid">
+        <div class="story-symbol reveal" aria-hidden="true">
+          <span class="story-moon"></span>
+          <span class="story-wave story-wave-one"></span>
+          <span class="story-wave story-wave-two"></span>
+          <strong>1999</strong>
+        </div>
+        <div class="story-copy reveal">
+          <p class="eyebrow"><span></span> Uma história com sabor de litoral</p>
+          <h2>Caraguá à mesa,<br>há mais de duas décadas.</h2>
+          <p>Desde 1999, a Lunamar faz parte das noites de quem vive e visita Caraguatatuba. Uma casa conhecida pelos sabores autorais, pelo rodízio e por transformar encontros simples em boas lembranças.</p>
+          <div class="story-signature">
+            <span></span>
+            <p><strong>Lunamar</strong><small>Pizza, mar e bons encontros.</small></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="location-section" id="localizacao">
+      <div class="container">
+        <div class="location-card reveal">
+          <div class="location-copy">
+            <p class="eyebrow eyebrow-light"><span></span> Onde a noite acontece</p>
+            <h2>Na orla de<br>Porto Novo.</h2>
+            <p>Av. Geraldo Nogueira da Silva, 1136<br>Porto Novo — Caraguatatuba, SP</p>
+            <div class="location-hours">
+              <span>Terça a domingo</span>
+              <strong>18h — 00h</strong>
+            </div>
+            <a class="button button-light" href="https://www.google.com/maps/search/?api=1&query=Av.+Geraldo+Nogueira+da+Silva,+1136,+Caraguatatuba,+SP" target="_blank" rel="noopener">Abrir no mapa <span>↗</span></a>
+          </div>
+          <div class="location-art" aria-hidden="true">
+            <span class="map-ring ring-one"></span>
+            <span class="map-ring ring-two"></span>
+            <span class="map-ring ring-three"></span>
+            <span class="map-pin"><i></i></span>
+            <p>LUNAMAR<br><small>em frente ao mar</small></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand brand-footer" href="#inicio">
+          <span class="brand-mark" aria-hidden="true"><span class="moon"></span><span class="wave"></span></span>
+          <span class="brand-copy"><strong>Lunamar</strong><small>Pizzaria desde 1999</small></span>
+        </a>
+        <p>Sabores autorais, rodízio e música ao vivo na orla de Caraguatatuba.</p>
+      </div>
+      <div class="footer-links">
+        <p>Navegue</p>
+        <a href="#cardapio">Cardápio</a><a href="#rodizio">Rodízio</a><a href="#historia">A Lunamar</a>
+      </div>
+      <div class="footer-links">
+        <p>Contato</p>
+        <a href="tel:+551238879119">(12) 3887-9119</a>
+        <a href="https://wa.me/5512997255608" target="_blank" rel="noopener">(12) 99725-5608</a>
+        <a href="https://www.instagram.com/pizzarialunamar/" target="_blank" rel="noopener">@pizzarialunamar</a>
+      </div>
+      <div class="footer-cta">
+        <p>Vai de Lunamar hoje?</p>
+        <a class="button button-primary" href="https://wa.me/5512997255608?text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20um%20pedido." target="_blank" rel="noopener">Pedir pelo WhatsApp <span>↗</span></a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Pizzaria Lunamar</span>
+      <span>Caraguatatuba · SP</span>
+    </div>
+  </footer>
+
+  <a class="floating-whatsapp" href="https://wa.me/5512997255608" target="_blank" rel="noopener" aria-label="Falar com a Pizzaria Lunamar pelo WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3a12 12 0 0 0-10.2 18.3L4 28l6.9-1.8A12 12 0 1 0 16 3Zm0 21.8a9.7 9.7 0 0 1-4.9-1.3l-.4-.2-4 .9 1.1-3.8-.3-.4A9.8 9.8 0 1 1 16 24.8Zm5.4-7.3c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2s-.8 1-.9 1.2c-.2.2-.4.2-.7.1-2-.9-3.3-1.7-4.6-4-.3-.6.3-.6.9-1.7.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.3 3.4 1.5 3.6c.2.2 2.5 3.8 6 5.3 2.2.9 3 .9 4.1.8.7-.1 1.8-.7 2-1.4.2-.7.2-1.3.1-1.4-.2-.2-.5-.3-.8-.5Z" fill="currentColor"/></svg>
+  </a>
+
+  <script src="./script.js"></script>
+</body>
+</html>
